@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,16 +7,19 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  font-family: "Poppins";
+
+body {
+  font-family: "Poppins", sans-serif;
   background: #494530;
 }
+
 nav {
   background: #e9e1bf;
   height: 150px;
   width: 100%;
   position: relative;
 }
+
 label.logo {
   font-family: "Protest Guerrilla", sans-serif;
   font-size: 150px;
@@ -25,22 +27,26 @@ label.logo {
   font-weight: bold;
   display: inline-block;
 }
+
 nav ul {
   float: right;
   margin-right: 40px;
   margin-top: 65px;
 }
+
 nav ul li {
   font-size: 55px;
   font-weight: bold;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   display: inline-block;
   line-height: 80px;
   margin: 0 10px;
 }
+
 nav ul li a {
   color: #000;
 }
+
 a:hover {
   padding: 5px;
   transition: 0.5s;
@@ -48,7 +54,6 @@ a:hover {
   background-color: #f0e4d2;
   border-radius: 10px;
 }
-
 
 .menu-icon {
   display: none;
@@ -58,7 +63,6 @@ a:hover {
   right: 40px;
   cursor: pointer;
 }
-
 
 #menu-toggle {
   display: none;
@@ -71,7 +75,6 @@ a:hover {
 nav ul {
   transition: 0.3s ease;
 }
-
 
 @media (max-width: 900px) {
   nav {
@@ -117,6 +120,7 @@ nav ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #eaf3cc;
 }
+
 .container {
   display: flex;
   gap: 12px;
@@ -131,6 +135,7 @@ nav ul {
   scroll-padding: 30px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
+
 .container .card {
   display: flex;
   width: 100%;
@@ -143,6 +148,7 @@ nav ul {
   scroll-snap-align: start;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
+
 .card .image {
   height: 150px;
   width: 150px;
@@ -150,6 +156,7 @@ nav ul {
   background: #e9ebdb;
   border-radius: 50%;
 }
+
 .image img {
   height: 100%;
   width: 100%;
@@ -157,12 +164,14 @@ nav ul {
   border-radius: 50%;
   border: 5px solid #fff;
 }
+
 .card h2 {
   margin-top: 25px;
   color: #333;
   font-size: 22px;
   font-weight: 600;
 }
+
 .card p {
   margin-top: 4px;
   font-size: 18px;
@@ -170,6 +179,7 @@ nav ul {
   color: #333;
   text-align: center;
 }
+
 .map {
   margin: 50px auto;
   display: flex;
@@ -179,7 +189,7 @@ nav ul {
 }
 
 .map label {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 55px;
   text-align: center;
   margin-bottom: 20px;
@@ -192,12 +202,11 @@ nav ul {
   border: 0;
 }
 
-
 @media (max-width: 768px) {
   .map label {
     font-size: 40px;
   }
-  
+
   .map iframe {
     width: 100%;
     height: 350px;
@@ -215,14 +224,15 @@ nav ul {
   }
 }
 
-footer{
+footer {
   width: 100%;
   background: #111;
-  position: relative; 
+  position: relative;
   bottom: 0;
   left: 0;
 }
-footer .content{
+
+footer .content {
   max-width: 1350px;
   margin: auto;
   padding: 10px;
@@ -230,115 +240,71 @@ footer .content{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p, a{
-  font-size: 200px;
+
+footer .content p,
+footer .content a {
+  font-size: 20px;
   color: #fff;
 }
-footer .content .box{
+
+footer .content .box {
   width: 33%;
   transition: all 0.4s ease;
 }
-footer .content .topic{
-  font-size: 72px;
+
+footer .content .topic {
+  font-size: 32px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 16px;
 }
-footer .content p{
+
+footer .content p {
   text-align: justify;
 }
-footer .content .lower .topic{
-  margin: 24px 0 5px 0;
-}
-footer .content .lower i{
-  padding-right: 16px;
-}
-footer .content .middle{
-  padding-left: 80px;
-}
-footer .content .middle a{
-  line-height: 2px;
-}
-footer .content .right input[type="text"]{
+
+footer .content .right input[type="text"],
+footer .content .right input[type="submit"] {
   height: 45px;
   width: 100%;
   outline: none;
-  color: #d9d9d9;
   background: #000;
   border-radius: 5px;
   padding-left: 10px;
   font-size: 17px;
   border: 2px solid #222222;
-}
-footer .content .right input[type="submit"]{
-  height: 42px;
-  width: 100%;
-  font-size: 18px;
   color: #d9d9d9;
+}
+
+footer .content .right input[type="submit"] {
   background: #857944;
-  outline: none;
-  border-radius: 5px;
-  letter-spacing: 1px;
   cursor: pointer;
   margin-top: 12px;
-  border: 2px solid #737437;
   transition: all 0.3s ease-in-out;
 }
-.content .right input[type="submit"]:hover{
+
+footer .content .right input[type="submit"]:hover {
   background: none;
-  color:  #fff5f5;
+  color: #fff5f5;
 }
-footer .content .media-icons a{
-  font-size: 16px;
-  height: 15px;
-  width: 15px;
-  display: inline-block;
-  text-align: center;
-  line-height: 33px;
-  border-radius: 5px;
-  border: 2px solid #222222;
-  margin: 30px 5px 0 0;
+
+footer a {
   transition: all 0.3s ease;
 }
-.content .media-icons a:hover{
-  border-color: #dfb8b0;
-}
-footer a{
-  transition: all 0.3s ease;
-}
-footer a:hover{
+
+footer a:hover {
   color: #c9a39b;
 }
 
-@media (max-width:100px) {
-  footer .content .middle{
-    padding-left: 50px;
-  }
-}
-@media (max-width:950px){
-  footer .content .box{
+@media (max-width: 950px) {
+  footer .content .box {
     width: 50%;
   }
-  .content .right{
-    margin-top: 40px;
-  }
 }
-@media (max-width:60px){
-  footer{
-    position: relative;
-  }
-  footer .content .box{
+
+@media (max-width: 600px) {
+  footer .content .box {
     width: 100%;
     margin-top: 30px;
   }
-  footer .content .middle{
-    padding-left: 0;
-  }
-}
-footer h5{
-  color: #000;
-  font-weight: bold;
-}
-footer p{
-  color: #222222;
 }
